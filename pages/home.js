@@ -1,13 +1,11 @@
 import Head from "next/head";
+import Image from "next/image";
+import styles from "../components/hero.module.css";
 import { gql } from "@apollo/client";
 import { client } from "../lib/apollo";
 import loadable from "@loadable/component";
 import Layout from "../components/Layout";
-import Hero from "../components/Hero";
-// import Mission from "../components/Mission";
-// import Treatments from "../components/Treatments";
-// import Blocks from "../components/Blocks";
-// import Cta from "../components/Cta";
+import hero from "../images/hero.webp";
 const Cta = loadable(() => import("../components/Cta"));
 const Mission = loadable(() => import("../components/Mission"));
 const Treatments = loadable(() => import("../components/Treatments"));
@@ -42,6 +40,30 @@ export async function getStaticProps() {
     },
   };
 }
+
+const Hero = ({ home }) => {
+  return (
+    <section className={styles.heroContainer}>
+      <div className={styles.hero}>
+        <span className={styles.headline}>{home.featuredImage.node.title}</span>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: home.featuredImage.node.caption,
+          }}
+          className={styles.description}
+        ></div>
+      </div>
+      <Image
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
+        placeholder="blur"
+        src={hero}
+        alt="Car Accident Victem"
+      />
+    </section>
+  );
+};
 
 export default function Home({ home }) {
   return (
