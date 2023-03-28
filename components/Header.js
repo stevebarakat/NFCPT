@@ -39,9 +39,11 @@ const Menu = ({ item, handleSetMobileOpen }) => {
   const primaryMenu = (
     <li ref={ref}>
       {!isDropdownButton ? (
-        <Link href={item.path} passHref>
-          <a className="link">{item.label}</a>
-        </Link>
+        <>
+          <Link href={item.path} passHref>
+            <a className="link">{item.label}</a>
+          </Link>
+        </>
       ) : (
         <button
           className="link"
