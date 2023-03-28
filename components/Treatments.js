@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useQuery, gql } from "@apollo/client";
 import styles from "./treatments.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,6 +23,7 @@ const DISORDERS = gql`
           disorder {
             disorderName
             disorderImageBase64
+            disorderLink
             disorderImage {
               sourceUrl
             }
@@ -95,15 +97,17 @@ const Treatments = () => {
                       height: "200px",
                     }}
                   >
-                    <Image
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
-                      placeholder="blur"
-                      blurDataURL={disorder.disorder.disorderImageBase64}
-                      src={disorder.disorder.disorderImage.sourceUrl}
-                      alt={disorder.disorder.disorderName}
-                    />
+                    <Link href={disorder.disorder.disorderLink} passHref>
+                      <Image
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center"
+                        placeholder="blur"
+                        blurDataURL={disorder.disorder.disorderImageBase64}
+                        src={disorder.disorder.disorderImage.sourceUrl}
+                        alt={disorder.disorder.disorderName}
+                      />
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>

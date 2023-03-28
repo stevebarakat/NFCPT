@@ -375,6 +375,13 @@ article {
   color: white;
   font-weight: bold;
 }
+
+img {
+  float: left;
+  padding: 12px;
+  margin-left: 24px;
+}
+
 @media (max-width: 875px) {
   .link {
     border-bottom: 1px solid white;
