@@ -1,0 +1,152 @@
+.mission {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  max-width: 100%;
+  background: white;
+  border-top: 4px solid white;
+  font-family: var(--secondaryFont);
+  /* font-size: 2rem; */
+  color: var(--grey60);
+  padding: 4rem 0;
+  position: relative;
+}
+
+.mission h1 {
+  display: block;
+  font-family: var(--secondaryFont);
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.1rem;
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 1rem;
+}
+
+.mission img {
+  z-index: 0;
+}
+
+.missionLeftWrap {
+  z-index: 55;
+  max-width: 675px;
+  width: 100%;
+  padding: 2rem;
+  justify-self: center;
+  background: var(--grey025);
+  box-shadow: var(--shadow-elevation-medium);
+}
+.missionRightWrap {
+  max-width: 675px;
+  width: 100%;
+  height: 100%;
+  z-index: 55;
+  justify-self: center;
+  align-self: center;
+  border-left: none;
+  padding: 2rem;
+  text-align: center;
+  background: var(--grey025);
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+.missionSubHeader {
+  padding-bottom: 1.25rem;
+  display: block;
+  font-size: 1.25rem;
+  letter-spacing: -0.05rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--primaryColor);
+}
+.missionDescription {
+  display: block;
+  line-height: clamp(1.25, 5vmin, 1.75);
+  font-size: clamp(1rem, 5vmin, 1.5rem);
+  padding: 0 2rem;
+}
+
+.missionList li {
+  padding-left: 2rem;
+  line-height: clamp(1.25, 5vmin, 1.75);
+  font-size: clamp(1rem, 5vmin, 1.5rem);
+}
+
+.missionList li:before {
+  content: url("../images/check.svg");
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  top: 0.35rem;
+  left: 0;
+  margin-left: -2rem;
+  margin-right: 0.5rem;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-top: 4rem;
+  justify-content: center;
+  text-align: center;
+}
+.stat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--primaryFont);
+  font-size: 3rem;
+  font-weight: 900;
+  width: fit-content;
+}
+
+.stat span:last-child {
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 850px) {
+  .mission {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .missionHeader {
+    font-size: 2.25rem;
+    text-align: left;
+  }
+  .missionSubHeader {
+    font-size: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .missionDescription {
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+  }
+  .missionList li {
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+  }
+  .missionLeftWrap {
+    justify-self: flex-end;
+    align-self: flex-start;
+    background: none;
+    box-shadow: none;
+  }
+  .missionRightWrap {
+    height: fit-content;
+    border-left: 2px solid white;
+    border-top: none;
+    justify-self: flex-start;
+    align-self: center;
+    text-align: left;
+    background: none;
+    box-shadow: none;
+  }
+  .stats {
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+}

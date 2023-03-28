@@ -1,0 +1,28 @@
+.swiper {
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-bottom: 2.5rem !important;
+}
+
+.swiper-pagination {
+  bottom: 16px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0 !important;
+  padding-top: 2rem !important;
+}
+
+.swiper-pagination-bullet {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--accentGradient) !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--grey05) !important;
+}

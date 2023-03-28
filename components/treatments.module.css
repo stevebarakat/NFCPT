@@ -1,0 +1,45 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  color: white;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.card img {
+  border-radius: 8px;
+  aspect-ratio: 1/1;
+}
+
+.cardHeader {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  z-index: 9;
+  bottom: 0;
+  background: hsla(324, 79%, 68%, 0.75);
+  width: 100%;
+  height: fit-content;
+  padding: 0.5rem;
+  border-radius: 0 0 8px 8px;
+}
+
+.h2 {
+  font-size: 3.25rem;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 800;
+  color: var(--grey05);
+  padding-bottom: 2rem;
+}
+
+.treatmentsWrap {
+  background: var(--primaryGradient);
+  padding: 6rem 0;
+}

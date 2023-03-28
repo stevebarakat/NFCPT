@@ -1,0 +1,75 @@
+.sidebarWidget {
+  height: fit-content;
+  padding: 1rem 0 2rem;
+  margin-bottom: 4rem;
+  display: none;
+  flex-direction: column;
+  z-index: 9;
+  position: relative;
+}
+
+.sidebarWidget form {
+  padding: 1.5rem;
+}
+
+.sidebarWidget label {
+  color: white;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.testimonial {
+  color: var(--grey05);
+  font-size: 1.75rem;
+  line-height: 2;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+  padding: 2rem;
+}
+.testimonialImg {
+  min-width: 33%;
+  position: relative;
+  padding: 1.5rem;
+  margin: 3rem;
+  background: var(--grey05);
+  border-radius: 90%;
+  border: 40px solid var(--grey05);
+  aspect-ratio: 1/1;
+}
+.testimonialImg img {
+  border-radius: 90%;
+}
+@media (min-width: 700px) {
+  .sidebarWidget {
+    display: flex;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1050px) {
+  .sidebarWidget {
+    flex-direction: row;
+    padding: 2rem;
+  }
+
+  .sidebarWidget form {
+    width: 50%;
+  }
+
+  .testimonialImg {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .sidebarWidget label {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .sidebarWidget form {
+    padding: 2rem 4rem;
+  }
+}
