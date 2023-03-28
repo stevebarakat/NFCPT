@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { useState, useRef } from "react";
 import { useQuery, gql } from "@apollo/client";
 import useOnClickOutside from "../hooks/useOnClickOutside";
