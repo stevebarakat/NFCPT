@@ -29,7 +29,7 @@
 
 .missionLeftWrap {
   z-index: 55;
-  max-width: 675px;
+  max-width: 42.18rem;
   width: 100%;
   padding: 2rem;
   justify-self: center;
@@ -37,7 +37,7 @@
   box-shadow: var(--shadow-elevation-medium);
 }
 .missionRightWrap {
-  max-width: 675px;
+  max-width: 42.18rem;
   width: 100%;
   height: 100%;
   z-index: 55;

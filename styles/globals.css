@@ -97,7 +97,7 @@ article {
 }
 
 .container {
-  width: 1350px;
+  width: 84.375rem;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
@@ -334,7 +334,7 @@ article {
 .nav-container {
   display: flex;
   max-width: 100%;
-  width: 1350px;
+  width: 84.375rem;
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;

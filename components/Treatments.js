@@ -93,8 +93,8 @@ const Treatments = () => {
                   <div
                     style={{
                       position: "relative",
-                      width: "200px",
-                      height: "200px",
+                      width: "12.5rem",
+                      height: "12.5rem",
                     }}
                   >
                     <Link href={disorder.disorder.disorderLink} passHref>

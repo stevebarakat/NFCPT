@@ -17,7 +17,7 @@
 .ctaLeftWrap {
   display: flex;
   flex-wrap: wrap;
-  max-width: 675px;
+  max-width: 42.18rem;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,7 @@
 }
 
 .ctaRightWrap > div {
-  max-width: 675px;
+  max-width: 42.18rem;
   margin: 0 auto;
   padding: 2rem 1rem;
   align-self: center;

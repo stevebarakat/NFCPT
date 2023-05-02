@@ -1,6 +1,5 @@
 .footer {
   background: var(--darkColor);
-  font-size: 13px;
   font-weight: 500;
   border-top: 4px solid white;
   padding: 2rem 0;
@@ -31,6 +30,7 @@
 }
 .innerFooter div {
   min-width: 20%;
+  max-width: 90%;
 }
 .btnWrap {
   display: flex;
@@ -87,7 +87,7 @@
   font-size: 0.75rem;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 53rem) {
   .innerFooter {
     grid-gap: 0;
     display: grid;

@@ -155,7 +155,7 @@ export default function Header() {
                 <Image
                   priority
                   layout="fixed"
-                  width="200"
+                  // width="300"
                   src={logo}
                   quality="100"
                   alt="North Florida Chiropractic Physical Therapy"
@@ -207,7 +207,7 @@ export default function Header() {
         .nav-container {
           display: flex;
           max-width: 100%;
-          width: 1350px;
+          width: 84.375rem;
           justify-content: space-between;
           margin: 0 auto;
           align-items: center;
