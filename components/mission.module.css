@@ -67,20 +67,20 @@
 }
 
 .missionList li {
-  padding-left: 2rem;
-  line-height: clamp(1.25, 5vmin, 1.75);
   font-size: clamp(1rem, 5vmin, 1.5rem);
+  line-height: 2;
+  margin-bottom: 1rem;
 }
 
 .missionList li:before {
   content: url("../images/check.svg");
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   position: relative;
-  top: 0.35rem;
-  left: 0;
-  margin-left: -2rem;
+  top: 0.15rem;
+  /* left: 0; */
+  /* margin-left: -3rem; */
   margin-right: 0.5rem;
 }
 
@@ -117,6 +117,22 @@
   .mission h1 {
     text-align: left;
   }
+  .missionList li {
+    padding-left: 2rem;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+  }
+  .missionList li:before {
+    content: url("../images/check.svg");
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    top: 0.35rem;
+    left: 0;
+    margin-left: -3rem;
+    margin-right: 0.5rem;
+  }
 
   .missionHeader {
     font-size: 2.25rem;
@@ -127,10 +143,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .missionDescription {
-    line-height: 2.5rem;
-    font-size: 1.25rem;
-  }
-  .missionList li {
     line-height: 2.5rem;
     font-size: 1.25rem;
   }
