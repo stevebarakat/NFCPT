@@ -25,6 +25,7 @@
   line-height: 1;
   display: inline-block;
   z-index: 9;
+  max-width: 16ch;
 }
 
 .description {

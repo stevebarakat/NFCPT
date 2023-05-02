@@ -5,13 +5,14 @@
   font-size: 0.875rem;
   white-space: nowrap;
   height: fit-content;
-  padding: 0.75rem;
+  padding: 12px;
   font-family: var(--primaryFont);
+  margin-top: 8px;
 }
 
 @media screen and (min-width: 850px) {
   .button {
     font-size: 1rem;
-    padding: 1rem;
+    padding: 16px 24px;
   }
 }
